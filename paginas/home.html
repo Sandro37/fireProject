@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="../scripts/env.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/verificarSeEstaLogado.js"></script>
+    <script src="../scripts/poderPublico.js"></script>
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="../scripts/desconectar.js"></script>
+    <title>HOME</title>
+</head>
+<body>
+    <div class="menu">
+        <nav class="nav-menu">
+          <ul class="nav-menu-itens">
+                <li class="nav-menu-item"><a onclick="desconectar()">DESCONECTAR</a></li>  
+                <li class="nav-menu-item"><a href="mudarSenha.html">MUDAR SENHA</a></li>  
+          </ul>
+        </nav>
+    </div>
+    <div id="funcoes">
+        <div>
+            <h4>Funcionalidades</h4>
+            <ul id="funcoes-ul">
+                <li id="funcoes-li"><a href="../paginas/problemaNovo.html">Cadastrar novo problema</a></li>
+                <li id="funcoes-li"><a href="../paginas/incluirDetalher.html">Incluir detalhes</a></li>
+                <li id="funcoes-li"><a href="../paginas/listarProblema.html">Listar meus problemas</a></li>
+            </ul>
+        </div>
+    </div>
+     <!-- #rodapé da página -->
+     <footer id="footer">
+        <div id="footer-conteudo">
+            <div id="direitos-autorais">
+                <p> Desenvolvido por Alessandro - &copy; 2020 Copyright</p>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

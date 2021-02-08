@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="../styles/login.css">
+  
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+  <script src="../scripts/env.js"></script>
+  
+  <script src="../scripts/atualizarSenha.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATUALIZAR SENHA</title>
+</head>
+<body>
+     <!-- #menu de navegação da página :D -->
+   <div class="menu">
+    <nav class="nav-menu">
+       <ul class="nav-menu-itens">
+        <li class="nav-menu-item"><a href="home.html">HOME</a></li>  
+       </ul>
+    </nav>
+</div>
+
+<div id="formulario">
+    <h2>ATUALIZAR SENHA</h2>
+      <fieldset>
+        <div>
+          <label for="senha">SENHA NOVA:</label>
+          <input type="password" id="senha" required>
+        </div>
+        <div>
+          <label for="senhaNova">SENHA(CONFIRMAÇÃO):</label>
+          <input type="password" id="senhaNova" required>
+        </div>
+        <div>
+          <p id="Mensagem"></p>
+        </div>
+        <button onclick="atualizarSenha()">ENVIAR</button>
+      </fieldset>
+</div>
+  
+    <!-- #rodapé da página -->
+    <footer id="footer">
+        <div id="footer-conteudo">
+            <div id="direitos-autorais">
+                <p> Desenvolvido por Alessandro - &copy; 2020 Copyright</p>
+            </div>
+        </div>
+</body>
+</html>

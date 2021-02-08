@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  </body>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/env.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRAR</title>
+</head>
+<body>
+   <!-- #menu de navegação da página :D -->
+  <div class="menu">
+      <nav class="nav-menu">
+        <ul class="nav-menu-itens">
+              <li class="nav-menu-item"><a id="semConta" href="paginas/homeSemConta.html">Coninuar sem conta</a></li>  
+        </ul>
+      </nav>
+  </div>
+  <div id="formulario">
+     <h2>Registre-se para continuar</h2>
+      <fieldset>
+        <div>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="senha">SENHA:</label>
+            <input type="password" id="senha" required>
+        </div>
+        <div>
+          <label for="senhaConfirme">CONFIRME SUA SENHA</label>
+          <input type="password" id="senhaConfirmacao" required>
+          <p id="Mensagem"></p>
+        </div>
+        <button onclick="pegardados()">Enviar</button>
+      </fieldset>
+     <p>Já tem conta? <a href="paginas/login.html">Login</a></p>
+  </div>
+     <!-- #rodapé da página -->
+     <footer id="footer">
+      <div id="footer-conteudo">
+          <div id="direitos-autorais">
+              <p> Desenvolvido por Alessandro - &copy; 2020 Copyright</p>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="../scripts/env.js"></script>
+    <script src="../scripts/problema.js"></script>
+    <script src="../scripts/responderPoderPublico.js"></script>
+    <link rel="stylesheet" href="../styles/listarProblema.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/lista.css">
+    <title>PROBLEMAS</title>
+</head>
+<body onload="listarProblema()">
+
+    <div class="header">
+        <a class="active" href="home.html">Home</a>
+        <a href="" class="logo">PÁGINA DE ATUALIZAÇÃO DOS PROBLEMAS</a>
+        <div class="header-right">
+        </div>
+      </div>
+
+    <table id="table" > 
+        <th>ID</th>
+        <th>Problema</th>
+        <th>Local</th>
+        <th>MyFile</th>
+        <th>Status</th>
+    </table>
+    <br><br><br><br>
+    <fieldset>
+        <label for="id">Entre com um ID (ATUALIZAR): </label>
+        <input type="text" id="id" required>
+        <div id="formulario">
+            <h2>INCLUIR STATUS</h2>
+               <div>
+                   <label for="status">STATUS</label>
+                   <select name="status" id="status">
+                       <option value="Cadastrado">Cadastrado</option>
+                       <option value="Em andamento">Em andamento</option>
+                       <option value="Concluido">Concluido</option>
+                   </select>
+        </div>
+        <input type="submit" onclick="responder()">
+    </fieldset>
+
+    <footer id="footer">
+        <div id="footer-conteudo">
+            <div id="direitos-autorais">
+                <p> Desenvolvido por Alessandro - &copy; 2020 Copyright</p>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
